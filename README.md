@@ -1,1 +1,2 @@
-"# manabi-chan" 
+# Manabi chanリポジトリ
+インターン先の課題教材用リポジトリ。
