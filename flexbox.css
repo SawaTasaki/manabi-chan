@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    border: 1px solid black;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.border {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 10%;
+}

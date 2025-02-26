@@ -1,0 +1,46 @@
+body {
+    font-size: calc(2px + 3vw);
+}
+
+.image-content {
+    border-radius: 10%;
+    transition: background-color 4s;
+}
+
+.image-content:hover {
+    background-color: orange;
+}
+
+.first {
+    transform: scale(0.7);
+}
+
+.sec {
+    /*position: relative;
+    top: 10px;
+    left: 20px;*/
+    transform: rotate(0.5turn);
+}
+
+@media (min-width: 1000px) {
+    .image-contents {
+        display: flex;
+        border: 1px solid black;
+    }
+    .image-content {
+        width: 25%;
+        border: 1px solid black;
+    }
+}
+
+@media (max-width: 1000px) {
+    .image-contents {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+    }
+    .image-content {
+        width: 49%;
+        border: 1px solid black;
+    }
+}

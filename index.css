@@ -1,0 +1,36 @@
+.test, .span-test {
+    font-size: 20px;
+    font-family: serif;
+    color: pink;
+    line-height: 2;
+    text-shadow: red 1px 1px;
+
+    float: left;
+}
+
+table {
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-align: center;
+}
+th, td {
+    width: 100px;
+    height: 30px;    
+}
+
+.span-red {
+    color: red;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+main {
+    background-color: burlywood;
+}
+
+footer {
+    background-color: aqua;
+}

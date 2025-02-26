@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: #0e141a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #batery--container {
+    width: 6rem;
+    height: 12rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #batery--container:before {
+    width: 50%;
+    height: 1.3rem;
+    margin: 0 auto;
+    left: 24px;
+    border-radius: 4px 4px 0 0;
+  }
+
+  #batery--container-body, #batery--container:before {
+    border: solid 4px rgb(74, 74, 74);
+  }
+
+  #batery--container:after {
+    border: solid 48px transparent;
+    border-left: solid 96px rgba(14, 20, 26, 0.15);
+    border-bottom-width: 0px;
+    border-top-width: 175px;
+    bottom: -29px;
+    left: 4px;
+  }
+
+  #batery--container:after, #batery--container:before, #batery--load:before, #batery--load:after {
+    content: "";
+    position: absolute;
+  }
+
+  #batery--container-body {
+    width: 100%;
+    margin-top: 25px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    animation-fill-mode: forwards;
+  }
+
+  #batery--load {
+    position: absolute;
+    height: 1rem;
+    background: red;
+    bottom: 0;
+    width: 100%;
+    animation: loading 3s ease-in infinite;
+    animation-fill-mode: forwards;
+  }
+
+  #batery--load:before,#batery--load:after {
+    height: 0;
+    top: 0;
+    width: 60%;
+    border-radius: 50%;
+    background: red;
+  }
+
+  #batery--load:before {
+    left: 0;
+    animation: bounce-1 2s linear infinite;
+  }
+
+  #batery--load:after {
+    right: 0;
+    animation: bounce-1 2s -0.1s linear infinite;
+  }
+
+  @keyframes loading {
+    0%,100% {
+      height: 1rem;
+    }
+
+    70% {
+      height: 5rem;
+    }
+
+    90%, 95% {
+      height: 14rem;
+    }
+  }
+
+  @keyframes bounce-1 {
+    14%,16%,65% {
+      height: 20px;
+      transform:translateY(-8px);
+    }
+
+    40%,60% {
+      height: 0px;
+      transform:translateY(0px);
+    }
+
+    50% {
+      height: 25px;
+      transform:translateY(-13px);
+    }
+  }
